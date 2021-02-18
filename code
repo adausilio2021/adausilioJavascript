@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customer Information </title>
+</head>
+<body>
+<style>
+style {background-color: azure;}
+</style>
+
+<h1>Customer Information
+<style>
+h1{color:maroon;}
+</style>
+</h1>
+
+<p>
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" required><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" required> <br>
+<label for="email">Email:</label><br>
+  <input type="text" id="email" name="email" required><br>
+  <br>
+ <input type="submit" value="Submit">
+
+
+ <script>
+function validateForm(){
+var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+    var x = document.forms["myForm"]["lname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+    var x = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+    }
+</script>
+
+ </form>
+ 
+</p>
+
+</body>
+</html>
